@@ -295,7 +295,9 @@ section {
 }
 
 .home .slide .content {
-  width: 50rem;
+  width: 100rem;
+  margin: 0px;
+  margin-top: -250px;
 }
 
 .home .slide .content h3 {
@@ -303,6 +305,19 @@ section {
   text-transform: capitalize;
   color: #444;
   color: #fff;
+
+}
+.home .slide .content h3{
+  overflow: hidden;
+      white-space: nowrap;
+      animation: 
+      typing 3s steps(70, end) forwards;
+      font-size: 4.6rem;
+      width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
 .home .slide .content p {
