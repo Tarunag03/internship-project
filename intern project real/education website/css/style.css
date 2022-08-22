@@ -33,7 +33,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #0eb582;
+  background: linear-gradient(90deg, #f96b24, #ff9100);
 }
 
 section {
@@ -42,26 +42,34 @@ section {
 
 .heading-link {
   text-align: center;
-  background: url(../images/heading-bg.jpg) no-repeat;
-  background-size: cover;
+  background: url(../images/header.jpg) no-repeat;
+  background-size: 1700px 300px;
   background-position: center;
 }
 
 .heading-link h3 {
   font-size: 4rem;
   text-transform: capitalize;
-  color: #444;
+  color: white;
+  text-shadow: 2px 2px 2px red;
 }
 
 .heading-link p {
   font-size: 2rem;
   line-height: 2;
-  color: #777;
+  color: #8cffc6;
+  text-shadow: 2px 2px 2px green;
+  font-weight: bold;
+  
 }
 
 .heading-link p a {
-  color: #0eb582;
+  
+  color: #ffee58;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
 }
+
 
 .heading-link p a:hover {
   text-decoration: underline;
@@ -80,15 +88,16 @@ section {
   margin-top: 1rem;
   padding: 1rem 3rem;
   font-size: 1.8rem;
-  border: 0.1rem solid #0eb582;
-  background: #f0fdfa;
-  color: #0eb582;
+  border: 0.1rem solid #f96b24;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #f96b24, #ff9100);
+  color: #fff;
   cursor: pointer;
   text-transform: capitalize;
 }
 
 .btn:hover {
-  background: #0eb582;
+  background: linear-gradient(90deg, #ff9100 , #f96b24);
   color: #fff;
 }
 
@@ -120,7 +129,7 @@ section {
 }
 
 .header .logo i {
-  color: #0eb582;
+  color: #f96b24;
 }
 
 .header .navbar {
@@ -295,9 +304,7 @@ section {
 }
 
 .home .slide .content {
-  width: 100rem;
-  margin: 0px;
-  margin-top: -250px;
+  width: 50rem;
 }
 
 .home .slide .content h3 {
@@ -305,19 +312,6 @@ section {
   text-transform: capitalize;
   color: #444;
   color: #fff;
-
-}
-.home .slide .content h3{
-  overflow: hidden;
-      white-space: nowrap;
-      animation: 
-      typing 3s steps(70, end) forwards;
-      font-size: 4.6rem;
-      width: 0;
-}
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
 }
 
 .home .slide .content p {
@@ -723,8 +717,9 @@ section {
 .contact .icons-container .icons {
   text-align: center;
   padding: 3rem 2rem;
-  border: 0.1rem solid #0eb582;
-  background: #f0fdfa;
+  border: 0.1rem solid #f96b24;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #f96b24, #ff9100);
 }
 
 .contact .icons-container .icons i {
@@ -748,7 +743,7 @@ section {
 .contact .icons-container .icons p {
   font-size: 1.5rem;
   line-height: 2;
-  color: #777;
+  color: #fff;
 }
 
 .contact .row {
@@ -777,7 +772,8 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
-  border: 0.1rem solid #0eb582;
+  border: 0.2rem solid #f96b24;
+  border-radius: 8px;
   padding: 2rem;
 }
 
@@ -791,30 +787,31 @@ section {
 .contact .row form .box {
   width: 100%;
   padding: 1.2rem 1.4rem;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid #f96b24;
   font-size: 1.6rem;
   margin: .7rem 0;
 }
 
 .contact .row form .box:focus {
-  background: #0eb582;
-  color: #fff;
+  background: #fed5bf;
+  color: black;
+  
 }
 
 .contact .row form .box:focus::-webkit-input-placeholder {
-  color: #eee;
+  color: black;
 }
 
 .contact .row form .box:focus:-ms-input-placeholder {
-  color: #eee;
+  color: black;
 }
 
 .contact .row form .box:focus::-ms-input-placeholder {
-  color: #eee;
+  color: black;
 }
 
 .contact .row form .box:focus::placeholder {
-  color: #eee;
+  color: black;
 }
 
 .contact .row form textarea {
@@ -838,12 +835,15 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid #f96b24;
+  border-radius: 8px;
 }
 
 .faq .accordion-container .accordion.active .accordion-heading {
-  background: #0eb582;
+  background: rgb(251, 129, 62);
+  border-radius: 8px;
 }
+
 
 .faq .accordion-container .accordion.active .accordion-heading h3 {
   color: #fff;
@@ -882,7 +882,7 @@ section {
 
 .faq .accordion-container .accordion .accordion-heading i {
   font-size: 2rem;
-  color: #0eb582;
+  color: #f96b24;
 }
 
 .faq .accordion-container .accordion .accordion-content {
@@ -890,19 +890,34 @@ section {
   font-size: 1.5rem;
   line-height: 2;
   color: #777;
-  border-top: 0.1rem solid #0eb582;
+  /* border-top: 0.1rem solid #f96b24; */
   display: none;
 }
 
 .logo-container {
   text-align: center;
+  padding-top: 15px;
 }
 
 .logo-container img {
   height: 10rem;
+  width:auto;
   pointer-events: none;
+  
 }
-
+.placed{
+  font-family: Mulish,Helvetica,Arial,sans-serif;
+  font-size:24px;
+  font-weight: bold;
+  padding: 0px 0px 0px 144px;
+  }
+  
+.movingtext{
+  font-weight: bold;
+  color:black;
+  font-size:18px;
+  font-family:'Courier New', Courier, monospace;
+}
 .footer {
   background: #f0fdfa;
 }
@@ -923,7 +938,7 @@ section {
 }
 
 .footer .box-container .box h3 i {
-  color: #0eb582;
+  color: #f96b24;
 }
 
 .footer .box-container .box .share {
@@ -935,7 +950,7 @@ section {
   width: 4.5rem;
   line-height: 4.5rem;
   font-size: 1.7rem;
-  background-color: #0eb582;
+  background-color: rgb(251, 129, 62);
   color: #fff;
   margin-right: .3rem;
   text-align: center;
@@ -969,7 +984,7 @@ section {
   width: 100%;
   padding: 1.2rem 1.4rem;
   font-size: 1.6rem;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid rgb(251, 129, 62);
   margin-bottom: 1rem;
 }
 
